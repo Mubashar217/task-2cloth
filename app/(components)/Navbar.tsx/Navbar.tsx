@@ -6,7 +6,6 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const cartItemCount = 1;
   
@@ -28,23 +27,7 @@ export default function Navbar() {
         { label: "AirTint Tinted Moisturizing 3pc Set", href: "/" },
       ],
     },
-    {
-      label: "AirGlow",
-      children: [
-        { label: "AirGlow Tinted Highlighter, Single Can", href: "/" },
-        { label: "AirGlow Tinted Highlighter 3pc Set", href: "/" },
-      ],
-    },
-    {
-      label: "Prep & Tools",
-      children: [
-        { label: "AirFinish Setting Spray", href: "/" },
-        { label: "Liquid Silk Primer Spray", href: "/" },
-        { label: "Kabuki Brush", href: "/" },
-        { label: "SlimLine Kabuki Brush", href: "/" },
-        { label: "Body Brush", href: "/" },
-      ],
-    },
+
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -70,7 +53,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50  mx-auto">
+    <header className="bg-white shadow-md sticky top-0 z-50  mx-auto max-w-[1920] ">
       <div className="bg-green-200 text-sm text-center py-1 text-black">
         <span>Click Here</span> to Get <span>15% OFF</span> When You Sign Up For
         Email and SMS
@@ -88,13 +71,6 @@ export default function Navbar() {
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          {/* <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search...                        🔍"
-            className="border rounded-md px-3 py-1 text-sm focus:outline-none"
-          /> */}
         </div>
 
         <div className="absolute left-1/2 transform -translate-x-1/2 text-xl font-bold tracking-widest text-gray-800 text-center">
@@ -134,13 +110,6 @@ export default function Navbar() {
           className="fixed top-0 left-0 h-full w-4/5 lg:w-1/4 bg-white z-50 shadow-lg overflow-y-auto transition-all"
         >
           <div className="p-4 space-y-3">
-            {/* <input
-              type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search..."
-              className="w-full border rounded-md px-3 py-2 text-sm focus:outline-none"
-            /> */}
 
             {!activeCategory ? (
               <>
@@ -175,7 +144,7 @@ export default function Navbar() {
                   onClick={() => setActiveCategory(null)}
                   className="text-left text-sm text-pink-600 hover:underline mb-3 "
                 >
-                  ← Back
+                  く Back
                 </button>
                 {menuItems
                   .find((item) => item.label === activeCategory)
