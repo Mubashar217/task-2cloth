@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({ children, className, variant = 'primary
   return (
     <button
       className={clsx(
-        'px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200',
+        'px-5 py-2.5 rounded-md text-sm font-medium transition-all duration-200',
         variant === 'primary' &&
           'bg-green-500 text-white hover:bg-green-600 shadow-md',
         variant === 'outline' &&

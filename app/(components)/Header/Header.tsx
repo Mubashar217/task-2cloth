@@ -12,7 +12,7 @@ const Header = () => {
                     Create your own
                 </div>
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-                    Make the most <br />
+                    Make the most <br className='hidden md:block'/>
                     of o <span className="text-black">printing</span>
                 </h1>
                 <p className="text-gray-500 text-sm sm:text-base">
