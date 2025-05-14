@@ -9,7 +9,7 @@ export default function Tags() {
           everyone can wear your brand or message.”
         </p>
       </div>
-      <div className="imageloc md:flex justify-center mt-5 ">
+      <div className="imageloc grid itme-center md:grid-cols-6  justify-center mt-5 ">
         <img src="spotify.png" alt="img" />
         <img src="feedly.png" alt="img" />
         <img src="hopin.png" alt="img" />
