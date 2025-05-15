@@ -4,6 +4,7 @@ import Header from "./(components)/Header/Header";
 import Tags from "./(components)/Tags/Tags";
 import Customshirt from "./(components)/Customshirt/Customshirt";
 import Customshirt2 from "./(components)/Customshirt2/Customshirt2";
+import Customshirt3 from "./(components)/Customshirt3/Customshirt3";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
      <Tags/>
      <Customshirt/>
      <Customshirt2/>
+     <Customshirt3/>
     </div>
   );
 }

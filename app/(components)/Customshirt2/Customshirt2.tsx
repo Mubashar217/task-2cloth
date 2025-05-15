@@ -19,7 +19,7 @@ export default function Customshirt2() {
                 <p className='text-center'>Lorem ipsum det, cowec tetuec tetur duis necgi duis necgi det, consec eturlagix <br className='hidden md:block' />
                     adipiscing eliet, cowec tetopak</p>
             </div>
-            <div className='grid md:grid-cols-2 mt-10 text-center'>
+            {/* <div className='grid md:grid-cols-2 mt-10'>
                 <div className='smcard content-center justify-item-center item-center'>
                     <div>
                         <h1 className='text-2xl font-bold'>Premium quality custom t-shirts</h1>
@@ -37,7 +37,7 @@ export default function Customshirt2() {
                     </div>
                 </div>
                 <div><img src="laptop.png" alt="img" /></div>
-            </div>
+            </div> */}
         </div>
     )
 }
