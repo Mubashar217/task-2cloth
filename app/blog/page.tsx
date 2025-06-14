@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div>lorem ipsum blog page </div>
+    <div>blog imps</div>
   )
 }
